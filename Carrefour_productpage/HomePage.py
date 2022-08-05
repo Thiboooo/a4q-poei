@@ -45,5 +45,5 @@ class HomePage:
 
     def OpenProductCategoryPage(self, index):
         # clic on pate
-        pates = self.driver.find_element(By.CSS_SELECTOR, "#data-menu-level-2_R12F05 > li:nth-child("+str(index)+")")
+        pates = self.driver.find_element(By.CSS_SELECTOR, "#data-menu-level-2_R13F05 > li:nth-child("+str(index)+")")
         pates.click()
