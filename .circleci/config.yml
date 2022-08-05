@@ -15,19 +15,19 @@ jobs:
 
       - run:
           name: "Check python version"
-          command: python --version
+          command: python3 --version
 
       - run:
           name: "Install selenium"
-          command: pip -m install selenium
+          command: python3 -m pip install selenium
 
       - run:
           name: "Install pytest"
-          command: pip -m install pytest
+          command: python3 -m pip install pytest
 
       - run:
           name: "Run tests"
-          command: python -m pytest
+          command: python3 -m pytest Carrefour_productpage/test_tp.py
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
