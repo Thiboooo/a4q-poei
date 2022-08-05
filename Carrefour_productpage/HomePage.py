@@ -38,7 +38,7 @@ class HomePage:
     def OpenCategorySubMenu(self, index):
         # hover to feculent
         # ici on fait par index
-        selector = "#data-menu-level-1_R12 > li:nth-child("+str(index)+")"
+        selector = "#data-menu-level-1_R13 > li:nth-child("+str(index)+")"
         subCategory = self.wait.until(expected_conditions.visibility_of_element_located((By.CSS_SELECTOR, selector)))
         self.action.move_to_element(subCategory)
         self.action.perform()
